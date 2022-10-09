@@ -1,0 +1,92 @@
+.filter
+    margin-top: 40px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    max-width: 240px
+    &-price, &-color, &-material, &-size
+        list-style: none
+        padding: 0
+        margin-bottom: 50px
+    &__title
+        font-size: 20px
+        font-weight: 700
+        text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.25)
+        margin-bottom: 20px
+    &-color
+        display: flex
+        flex-wrap: wrap
+        margin-left: -6px
+        &__block
+            display: block
+            position: relative
+            width: 35px
+            height: 35px
+            border: 0.5px solid #9D9D9D
+            margin: 0 6px 13px 6px
+            border-radius: 4px
+            box-shadow: 2px 5px 3px rgba(0, 0, 0, 0.3)
+            position: relative
+            &-hint
+                opacity: 0
+                min-width: 49px
+                background: rgba(157, 157, 157, 0.3)
+                border-radius: 2px
+                font-size: 10px
+                position: absolute
+                top: -15px
+                left: 15px
+                z-index: 10
+                transition: opacity ease-out .3s
+            &:hover
+                cursor: pointer
+                .filter-color__block-hint
+                    opacity: 1
+    &__btn
+        &-side
+            text-decoration: underline
+            background: none
+            padding: 0 5px
+            border: 0
+            color: #9D9D9D
+            font-size: 16px
+    &-price
+        display: flex
+        flex-wrap: wrap
+        span
+            display: block
+            text-align: left
+            font-weight: 400
+            font-size: 16px
+            color: #9D9D9D
+            margin-bottom: 10px
+        input
+            max-width: 113px
+            height: 48px
+            padding-left: 10px
+            outline: 0
+            border-color: rgba(0, 0, 0, 0.2)
+            border-width: 1px
+    &-material
+        text-align: left
+        &__block
+            margin: 6px 0 6px 0
+    &-size
+        text-align: left
+        &__block
+            margin: 6px 0 6px 0
+
+.input-left
+    input
+        border-top-left-radius: 5px
+        border-bottom-left-radius: 5px
+        border-right-width: 0.5px
+
+.input-right
+    input
+        border-top-right-radius: 5px
+        border-bottom-right-radius: 5px
+        border-left-width: 0.5px
+
+.checkbox-color
+    position: absolute
